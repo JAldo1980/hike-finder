@@ -1,0 +1,23 @@
+export const destinations = [
+    {
+        image:,
+        h3:,
+        subheader:,
+        description:,
+        buttonLink:
+    },
+    {
+        image:,
+        h3:,
+        subheader:,
+        description:,
+        buttonLink:
+    },
+    {
+        image:,
+        h3:,
+        subheader:,
+        description:,
+        buttonLink:
+    },
+]

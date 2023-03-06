@@ -73,3 +73,80 @@ select {
   }
 }
 /* end of css reset */
+
+/* MOBILE FIRST DESIGN */
+
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* color palete */
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+header {
+  margin-top: 1em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.logo-top {
+  width: 45%;
+}
+
+nav {
+  display: none;
+}
+
+.hamburger-icon {
+  display: block;
+  position: absolute;
+  right: 1em;
+}
+
+.bar {
+  margin: 5px;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.hero-section {
+  padding: 2em 1em 2em 1em;
+
+  background-image: url(/images/home-hero.jpg);
+  background-repeat: none;
+  background-size: cover;
+
+  max-width: 100%;
+}
+
+.hero-section h1 {
+  color: white;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+h1 span {
+  color: #ece481;
+}
+
+.hero-section p {
+  margin-top: 1em;
+  font-size: 1rem;
+  color: white;
+}
