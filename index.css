@@ -118,6 +118,10 @@ nav ul a {
   cursor: pointer;
 }
 
+nav ul a:hover {
+  color: darkgray;
+  transition: 0.4s;
+}
 /* mobile navigaition */
 
 .hamburger-icon {
@@ -459,6 +463,26 @@ footer {
   display: none;
 }
 
+/* floyen page */
+
+.floyen-info {
+  margin-top: 1em;
+}
+
+.floyen-hero-img {
+  width: 100%;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.floyen-hero p,
+.floyen-info p {
+  margin-top: 1em;
+}
+
 /* sign-up button */
 
 /* log-in button */
@@ -686,5 +710,11 @@ footer {
 
   .explore-right {
     display: block;
+  }
+
+  .info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
   }
 }
