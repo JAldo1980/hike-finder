@@ -104,6 +104,7 @@ header {
 
 nav {
   display: none;
+  position: relative;
 }
 
 nav ul {
@@ -496,6 +497,25 @@ ul a:last-child:hover {
   display: none;
 }
 
+/* explore new option menu */
+
+.explore-new-options-h3 {
+  margin-top: 1em;
+  text-align: center;
+}
+.explore-new-areas {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.new-areas {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
 /* floyen page */
 
 .floyen-info {
@@ -521,13 +541,116 @@ ul a:last-child:hover {
 
 /* ulriken page */
 
-.ulriken-hero {
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
+.video-box {
+  margin-bottom: 1em;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* signup modal  */
+
+.signup-modal {
+  display: none;
+}
+
+.signup-modal-box {
+  position: fixed;
+  z-index: 2000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2em;
+  min-width: 320px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.5) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.5) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.signup-modal-box h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.login-modal {
+  display: none;
+}
+
+.login-modal-box {
+  position: fixed;
+  z-index: 2000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2em;
+  min-width: 320px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.5) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.5) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.active {
+  display: block;
 }
 
 /* sign-up button */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.close-signup-modal,
+.close-login-modal {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: red;
+}
 
 /* log-in button */
 
@@ -539,33 +662,6 @@ ul a:last-child:hover {
     display: block;
     margin-left: auto;
   }
-
-  /* ul a:nth-last-child(2) {
-    background-color: green;
-    padding: 0.5em 1em;
-    color: white;
-
-    border-radius: 5px;
-  }
-
-  ul a:last-child {
-    border: 1px solid black;
-    background-color: white;
-    padding: 0.5em 1em;
-
-    border-radius: 5px;
-  }
-
-  ul a:nth-last-child(2):hover {
-    background-color: lightgreen;
-    transition: 0.4s;
-  }
-
-  ul a:last-child:hover {
-    background-color: black;
-    color: white;
-    transition: 0.4s;
-  } */
 
   .hero-section {
     grid-template-columns: repeat(2, 1fr);
@@ -761,6 +857,13 @@ ul a:last-child:hover {
   }
 
   .info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+
+  /* ulriken page */
+  .ulriken-hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
