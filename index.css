@@ -82,6 +82,7 @@ picture {
 body {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  line-height: 1.9;
 }
 
 .container {
@@ -423,6 +424,38 @@ footer {
   border: 1px solid white;
 }
 
+ul a:nth-last-child(2) {
+  background-color: green;
+  padding: 0.5em 1em;
+  color: white;
+
+  border-radius: 5px;
+}
+
+ul a:last-child {
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5em 1em;
+
+  border-radius: 5px;
+}
+
+ul a:nth-last-child(2):hover {
+  background-color: lightgreen;
+  transition: 0.4s;
+}
+
+ul a:last-child:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+
+.footer-menu a:hover {
+  color: lightgreen;
+  transition: 0.4s;
+}
+
 /* explore page */
 
 .explore-main-section {
@@ -474,13 +507,24 @@ footer {
 }
 
 .info-box {
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
 }
 
 .floyen-hero p,
-.floyen-info p {
+.floyen-info p,
+.ulriken-info p,
+.Landåsfjellet p {
   margin-top: 1em;
+}
+
+/* ulriken page */
+
+.ulriken-hero {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 
 /* sign-up button */
@@ -496,7 +540,7 @@ footer {
     margin-left: auto;
   }
 
-  ul a:nth-last-child(2) {
+  /* ul a:nth-last-child(2) {
     background-color: green;
     padding: 0.5em 1em;
     color: white;
@@ -521,7 +565,7 @@ footer {
     background-color: black;
     color: white;
     transition: 0.4s;
-  }
+  } */
 
   .hero-section {
     grid-template-columns: repeat(2, 1fr);
@@ -561,6 +605,10 @@ footer {
 /* small desktop  */
 
 @media (min-width: 1100px) {
+  body {
+    font-size: 1.2rem;
+  }
+
   nav ul {
     gap: 3em;
   }
