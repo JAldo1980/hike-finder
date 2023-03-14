@@ -12,7 +12,8 @@ hamburgerIcon.addEventListener("click", function () {
 });
 
 // signup form event listener
-signupBtn.addEventListener("click", function () {
+signupBtn.addEventListener("click", function (e) {
+  e.preventDefault();
   signupModal.classList.toggle("active");
 
   signupModal.innerHTML = `
@@ -48,7 +49,8 @@ signupBtn.addEventListener("click", function () {
 });
 
 // login form event listener
-loginBtn.addEventListener("click", function () {
+loginBtn.addEventListener("click", function (e) {
+  e.preventDefault();
   loginModal.classList.toggle("active");
 
   loginModal.innerHTML = `
