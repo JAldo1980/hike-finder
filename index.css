@@ -158,14 +158,17 @@ nav ul a:hover {
 
 .mobile-nav-positioning {
   display: flex;
-  justify-content: center;
-  padding-top: 3.5em;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mobile-nav {
+  margin-top: 11em;
+  padding-top: 4em;
+  width: 100%;
+  height: 300px;
   display: none;
   position: absolute;
-  height: 100vh;
   background-color: rgba(1, 1, 1, 0.8);
   top: 50%;
   left: 50%;
@@ -174,12 +177,20 @@ nav ul a:hover {
 }
 
 .mobile-nav ul {
-  padding: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  color: white;
+  gap: 1em;
 }
 
 .mobile-nav li {
   padding: 0.5em;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .mobile-nav ul a {
@@ -187,7 +198,8 @@ nav ul a:hover {
   list-style: none;
   cursor: pointer;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .show-nav {
@@ -643,16 +655,24 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-.close-signup-modal,
-.close-login-modal {
-  cursor: pointer;
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  background-color: red;
+/* log-in button */
+
+.login-btn p {
+  color: black;
 }
 
-/* log-in button */
+.login-btn p:hover {
+  color: white;
+}
+
+.close-login-modal,
+.close-signup-modal {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  margin-top: 1em;
+  background-color: red;
+}
 
 /****** MEDIA QUERIES ******/
 /* tablet / desktop responsiveness  */
