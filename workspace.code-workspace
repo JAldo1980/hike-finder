@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "hike-finder",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "hike-finder"
+  }
+}
